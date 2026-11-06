@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "youth-record-writing",
+  "version": "0.4.0",
+  "description": "以創傷知情及生態系統觀點，協助判定政府系統服務項目、撰寫自立少年服務紀錄與督導建議。",
+  "author": {
+    "name": "Tzuyun Ting",
+    "email": "milkpuff.tw@gmail.com"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "自立少年服務紀錄撰寫",
+        "shortDescription": "自立服務紀錄與督導建議",
+        "longDescription": "五項功能：CCSA完整版紀錄、後追系統紀錄（1–6）、優勢與需求評估、後續處遇目標與策略、督導建議。",
+        "developerName": "Tzuyun Ting",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "功能1：CCSA完整版紀錄。請根據以下原始資料直接撰寫完整紀錄，缺漏以OOO標示。",
+          "功能2：後追系統紀錄格式（1）至（6）。請依原始資料完成基本資料、計入服務項目與服務摘要。",
+          "請先列出五種功能供我選擇，再依選擇處理以下內容。"
+        ]
+      }
+    }
+  }
+}
